@@ -79,11 +79,14 @@ namespace api_jwt
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            
+            //Authorize
+            app.UseAuthentication();
 
             //CORS
             app.UseCors(AllowAll);
 
-            //Authorize
+            
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
