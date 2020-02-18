@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs/core-jwt
+/src/api-jwt/bin/Debug/netcoreapp3.1
+/src/api-jwt/obj
+/src/JWTHelper/bin/Debug/netstandard2.0
+/src/JWTHelper/obj
