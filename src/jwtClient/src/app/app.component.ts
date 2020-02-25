@@ -37,13 +37,14 @@ export class AppComponent implements OnInit {
   }
 
   getNames(){
+
+    //Ejemplo con Axios
     Axios.defaults.headers.common['Authorization'] = 'Bearer ' + this.tokken;
 
     Axios.get(`${api}/name`).then(x=>{
       this.names = x.data;
     }).catch(err=>{
       this.names = [JSON.stringify(err)];
-      debugger;
     })
 
     /*debugger;

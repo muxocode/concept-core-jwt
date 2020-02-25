@@ -43,7 +43,7 @@ namespace api_jwt
                 });
             });
 
-            //TOKKEN
+            //JWT TOKKEN
             services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -56,6 +56,7 @@ namespace api_jwt
                 x.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
                 {
                     ValidateIssuerSigningKey = true,
+                    //jwtTokken estaría en la configuración del sistema, y es info sensible
                     IssuerSigningKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(jwtTokken),
                     ValidateIssuer = false,
                     ValidateAudience = false

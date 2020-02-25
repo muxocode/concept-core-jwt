@@ -16,6 +16,7 @@ namespace JWTHelper
             Key = key;
         }
 
+        //Código de ejemplo
         public string Create(CustomTokken customTokken, double validMinutes = 30)
         {
             var claims = new ClaimsIdentity();
@@ -38,6 +39,7 @@ namespace JWTHelper
             return tokenHandler.WriteToken(createdToken);
         }
 
+        //Ejemplo
         public CustomTokken GetTokken(HttpContext context)
         {
             CustomTokken customTokken = null;
