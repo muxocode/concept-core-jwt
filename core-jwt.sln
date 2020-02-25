@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "client", "client", "{B2FB97
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B917CED4-1C0B-4615-A867-E91018210DDB}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Pendiente\JWT.Security.docx = ..\..\..\..\Pendiente\JWT.Security.docx
+		JWT.Security.docx = JWT.Security.docx
 		readme.md = readme.md
 	EndProjectSection
 EndProject
